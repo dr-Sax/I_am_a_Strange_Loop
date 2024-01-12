@@ -78,7 +78,7 @@ class AudioBuffer:
     
     def start(self):
         self.input_thread.start()
-        self.output_thread.start()
+        #self.output_thread.start()
         while not self.is_full(): # wait until the buffer is filled
             sleep(0.1)
     
